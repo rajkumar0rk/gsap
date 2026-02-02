@@ -1,0 +1,13 @@
+gsap.to(".card",{
+  opacity:1,
+  scale:1,
+  direction:5,
+  onComplete:()=>{
+    gsap.to(".card",{
+      y:-21,
+      yoyo:true,
+      repeat:-1,
+      direction:0.5
+    })
+  }
+})
